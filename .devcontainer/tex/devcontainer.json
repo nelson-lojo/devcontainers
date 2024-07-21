@@ -1,0 +1,11 @@
+{
+    "build" : {
+        "dockerfile": "Dockerfile",
+        "options": [
+            "--platform", "linux/amd64"
+        ],
+        "cacheFrom": "nalsoon/tex-dev"
+    },
+    "features": {
+    }
+}
