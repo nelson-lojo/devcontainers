@@ -1,0 +1,16 @@
+{
+    "name": "Launch another repo as a course and copy over this repo as an element",
+    "build": { "dockerfile": "Dockerfile" },
+    "workspaceFolder": "/pl-course",
+  
+    "postCreateCommand": "sudo rm -rf /pl-course/elements/pl-faded-parsons; sudo cp -r /workspaces/pl-element/ /pl-course/elements/pl-element/ && sudo chown -R codespace /pl-course/elements/pl-element/ && git config --global --add safe.directory /pl-course/elements/pl-element",
+    "postAttachCommand": "export HOST_JOBS_DIR=/tmp/pl_jobqueue && sudo docker run -it --rm -p 3000:3000 -v $HOST_JOBS_DIR:/jobs -v /pl-course/:/course -v /var/run/docker.sock:/var/run/docker.sock prairielearn/prairielearn:latest",
+  
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {
+        "version" : "3.10"
+      },
+
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    }
+}

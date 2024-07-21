@@ -1,0 +1,26 @@
+
+# Nelson's Devcontainers
+
+This is a thin repository meant to serve as an authoritative source for the devcontainers that Nelson uses. 
+
+### Typesetting
+<details open>
+<summary>Click to toggle list</summary>
+
+| Folder Name |              Description                |
+|-------------|-----------------------------------------|
+| `tex`       | Ubuntu with a full texlive installation |
+</details>
+
+### Prairielearn Development
+<details open>
+<summary>Click to toggle list</summary>
+
+|           Folder Name            |          Description          |
+|----------------------------------|-------------------------------|
+| `prairielearn-course-repo`       | Treat the current repo as a PL Course, connecting the IDE to the directory containing the course and launching PL in dev mode on port 3000 |
+| `prairielearn-view-element`      | Treat the current repo as a PL Element, connecting the IDE to the directory containing the element and launching PL in dev mode on port 3000 with UC Berkeley's `pl-ucb-csxxx` course |
+| `prairielearn-course-other-repo` | Treat the current repo as a PL Element, launch PL in dev mode on port 3000 with UC Berkeley's `pl-ucb-csxxx` course, but connect the IDE to the entire course. <br /> <br /> Note: this devcontainer does not have a persistent disk, destroying all uncomitted files on each IDE connection |
+</details>
+
+
